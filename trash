@@ -1,0 +1,43 @@
+def max(x,y,z):
+    '''function to find the maximum of three numbers.'''
+    if (x>y) & (x>z):
+        return x
+    elif (x<y) & (y>z):
+        return y
+    elif (z>x) & (z>y):
+        return z
+num_1= int(input("Enter the first number: "))
+num_2= int(input("Enter the second number: "))
+num_3= int(input("Enter the third number: "))
+print(max(num_1,num_2,num_3))
+def sum_of_list(numbers):
+    ''' function to sum all the numbers in a list.'''
+    sum = 0
+    for i in numbers:
+        sum += i
+        return sum
+    print(sum)
+print(f"sum= {sum((2,3,4,5))}")
+
+
+
+
+
+----------------------------------------
+list = []
+def menu():
+    print("1. Add value to List")
+    print("2. Print List")
+    print("3. Exit")
+    choice= int(input("Choice?:"))
+    while True:
+        if choice==1:
+            value= int(input("Add value to list"))
+            list.append(value)
+            menu()
+        elif choice==2:
+            print(list)
+            menu()
+        elif choice==3:
+            exit()
+menu()
