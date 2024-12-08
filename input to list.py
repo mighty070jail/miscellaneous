@@ -5,13 +5,13 @@ Description: Inputing numbers to a list
 '''
 list = []
 def menu():
-    print("1. Add value to List")
+    print("1.Add value to the list")
     print("2. Print List")
     print("3. Exit")
-    choice= int(input("Choice?:"))
+    choice= int(input("Choose?:"))
     while True:
         if choice==1:
-            value= int(input("Add value to list"))
+            value= int(input("Please enter the item you want to add to the list."))
             list.append(value)
             menu()
         elif choice==2:
